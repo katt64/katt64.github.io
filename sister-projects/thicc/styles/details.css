@@ -1,0 +1,81 @@
+/* CSS for details.html */
+@import url("fonts/computer-modern/stylesheet.css");
+#container {
+  width: 60%;
+  min-width: 960px;
+  margin: 2em auto; }
+  #container #front-matter {
+    margin-bottom: 2em; }
+    #container #front-matter #heading {
+      text-align: center;
+      margin-bottom: 2em; }
+      #container #front-matter #heading #author-date h2 {
+        float: left;
+        width: 50%;
+        margin-top: 0; }
+    #container #front-matter #dedication {
+      text-align: center;
+      display: none !important; }
+    #container #front-matter #abstract {
+      width: 80%;
+      margin: auto; }
+      #container #front-matter #abstract h3 {
+        text-align: center; }
+  #container #back-matter {
+    margin-top: 5em; }
+    #container #back-matter #copyright {
+      text-align: center;
+      font-size: 0.9rem; }
+
+@media only screen and (max-width: 1024px) {
+  #container {
+    width: 90%;
+    min-width: auto; } }
+
+@media only print {
+  #container {
+    width: 100%;
+    min-width: auto;
+    margin: 0; } }
+
+.math, div.math {
+  font-family: "Computer Modern Oblique", serif; }
+
+div.math {
+  text-align: center;
+  margin: 0 auto 1.5rem auto; }
+
+/* Flush-left math */
+div.flmath {
+  font-family: "Computer Modern Oblique", serif;
+  width: 80%;
+  margin: auto; }
+
+.figure-container {
+  width: 80%;
+  margin: auto; }
+  .figure-container img {
+    max-width: 100%;
+    height: auto; }
+  .figure-container p {
+    margin-top: 0;
+    font-size: 0.9em;
+    text-align: right; }
+
+body {
+  font-family: "Computer Modern Serif", serif;
+  font-size: 1.1rem; }
+
+pre, code {
+  font-family: "Computer Modern Typewriter", monospace; }
+
+h1, h2 {
+  margin: 1.5rem 0;
+  font-weight: normal; }
+
+ol, ul {
+  margin-left: 3rem; }
+
+/*
+vim: sw=2 wrap tw=80
+*/

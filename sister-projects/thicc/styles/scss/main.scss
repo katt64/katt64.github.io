@@ -1,0 +1,28 @@
+/* Main CSS */
+
+/* Fonts 
+ * Comfortaa (Johan Aakerlund) 
+ * Open Sans (Steve Matteson)
+ */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+/*
+vim: sw=2 wrap tw=80
+*/

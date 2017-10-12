@@ -1,0 +1,81 @@
+/* CSS for index.html */
+
+/* Fonts
+ * Handlee (Joe Prince)
+ */
+@import url('https://fonts.googleapis.com/css?family=Handlee');
+
+#container {
+  width: 100%;
+  height: 100vh;
+
+
+  #header {
+    position: absolute;
+    top: 40vh;
+    left: 0;
+
+    width: 100%;
+    min-width: 800px;
+
+    h1 {
+      font: {
+        family: "Handlee", cursive;
+        size: 3rem;
+      }
+      text-transform: capitalize;
+      text-align: center;
+    }
+
+    #nav {
+      width: 50%;
+      max-width: 960px;
+
+      margin: 0.5em auto 0 auto;
+
+      font-size: 2rem;
+
+      div {
+        width: 50%;
+        float: left;
+        text-align: center;
+
+        a {
+          color: purple;
+          text-decoration: none;
+
+          transition: font-size 1s;
+
+          &:hover {
+            font-size: 1.3em;
+          }
+
+          &:visited {
+            color: grey;
+          }
+        }
+      }
+    }
+  }
+
+  #footer {
+    position: fixed;
+    bottom: 0.5em;
+    left: 0;
+
+    width: 100%;
+
+    font-size: small;
+    text-align: center;
+    
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+}
+
+body {
+  background: linear-gradient(45deg, #F5F5DC, #FFF);
+}
+

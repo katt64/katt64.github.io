@@ -1,0 +1,976 @@
+/* CSS for curve.html */
+/* Fonts
+ * Comfortaa (Johan Aakerlund)
+ */
+@import url("https://fonts.googleapis.com/css?family=Comfortaa");
+#plot-sin {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden; }
+  #plot-sin div {
+    height: 3px; }
+  #plot-sin div:nth-child(1) {
+    width: 9.99983px;
+    background-color: #ff0500; }
+  #plot-sin div:nth-child(2) {
+    width: 19.99867px;
+    background-color: #ff0a00; }
+  #plot-sin div:nth-child(3) {
+    width: 29.9955px;
+    background-color: #ff0f00; }
+  #plot-sin div:nth-child(4) {
+    width: 39.98933px;
+    background-color: #ff1300; }
+  #plot-sin div:nth-child(5) {
+    width: 49.97917px;
+    background-color: #ff1800; }
+  #plot-sin div:nth-child(6) {
+    width: 59.96401px;
+    background-color: #ff1d00; }
+  #plot-sin div:nth-child(7) {
+    width: 69.94285px;
+    background-color: #ff2200; }
+  #plot-sin div:nth-child(8) {
+    width: 79.91469px;
+    background-color: #ff2700; }
+  #plot-sin div:nth-child(9) {
+    width: 89.87855px;
+    background-color: #ff2c00; }
+  #plot-sin div:nth-child(10) {
+    width: 99.83342px;
+    background-color: #ff3100; }
+  #plot-sin div:nth-child(11) {
+    width: 109.7783px;
+    background-color: #ff3600; }
+  #plot-sin div:nth-child(12) {
+    width: 119.71221px;
+    background-color: #ff3a00; }
+  #plot-sin div:nth-child(13) {
+    width: 129.63414px;
+    background-color: #ff3f00; }
+  #plot-sin div:nth-child(14) {
+    width: 139.54311px;
+    background-color: #ff4400; }
+  #plot-sin div:nth-child(15) {
+    width: 149.43813px;
+    background-color: #ff4900; }
+  #plot-sin div:nth-child(16) {
+    width: 159.31821px;
+    background-color: #ff4e00; }
+  #plot-sin div:nth-child(17) {
+    width: 169.18235px;
+    background-color: #ff5300; }
+  #plot-sin div:nth-child(18) {
+    width: 179.02957px;
+    background-color: #ff5800; }
+  #plot-sin div:nth-child(19) {
+    width: 188.85889px;
+    background-color: #ff5d00; }
+  #plot-sin div:nth-child(20) {
+    width: 198.66933px;
+    background-color: #ff6100; }
+  #plot-sin div:nth-child(21) {
+    width: 208.4599px;
+    background-color: #ff6600; }
+  #plot-sin div:nth-child(22) {
+    width: 218.22962px;
+    background-color: #ff6b00; }
+  #plot-sin div:nth-child(23) {
+    width: 227.97752px;
+    background-color: #ff7000; }
+  #plot-sin div:nth-child(24) {
+    width: 237.70263px;
+    background-color: #ff7500; }
+  #plot-sin div:nth-child(25) {
+    width: 247.40396px;
+    background-color: #ff7a00; }
+  #plot-sin div:nth-child(26) {
+    width: 257.08055px;
+    background-color: #ff7f00; }
+  #plot-sin div:nth-child(27) {
+    width: 266.73144px;
+    background-color: #ff8400; }
+  #plot-sin div:nth-child(28) {
+    width: 276.35565px;
+    background-color: #ff8800; }
+  #plot-sin div:nth-child(29) {
+    width: 285.95223px;
+    background-color: #ff8d00; }
+  #plot-sin div:nth-child(30) {
+    width: 295.52021px;
+    background-color: #ff9200; }
+  #plot-sin div:nth-child(31) {
+    width: 305.05864px;
+    background-color: #ff9700; }
+  #plot-sin div:nth-child(32) {
+    width: 314.56656px;
+    background-color: #ff9c00; }
+  #plot-sin div:nth-child(33) {
+    width: 324.04303px;
+    background-color: #ffa100; }
+  #plot-sin div:nth-child(34) {
+    width: 333.48709px;
+    background-color: #ffa600; }
+  #plot-sin div:nth-child(35) {
+    width: 342.89781px;
+    background-color: #ffab00; }
+  #plot-sin div:nth-child(36) {
+    width: 352.27423px;
+    background-color: #ffaf00; }
+  #plot-sin div:nth-child(37) {
+    width: 361.61543px;
+    background-color: #ffb400; }
+  #plot-sin div:nth-child(38) {
+    width: 370.92047px;
+    background-color: #ffb900; }
+  #plot-sin div:nth-child(39) {
+    width: 380.18842px;
+    background-color: #ffbe00; }
+  #plot-sin div:nth-child(40) {
+    width: 389.41834px;
+    background-color: #ffc300; }
+  #plot-sin div:nth-child(41) {
+    width: 398.60933px;
+    background-color: #ffc800; }
+  #plot-sin div:nth-child(42) {
+    width: 407.76045px;
+    background-color: #ffcd00; }
+  #plot-sin div:nth-child(43) {
+    width: 416.8708px;
+    background-color: #ffd200; }
+  #plot-sin div:nth-child(44) {
+    width: 425.93947px;
+    background-color: #ffd600; }
+  #plot-sin div:nth-child(45) {
+    width: 434.96553px;
+    background-color: #ffdb00; }
+  #plot-sin div:nth-child(46) {
+    width: 443.94811px;
+    background-color: #ffe000; }
+  #plot-sin div:nth-child(47) {
+    width: 452.88629px;
+    background-color: #ffe500; }
+  #plot-sin div:nth-child(48) {
+    width: 461.77918px;
+    background-color: #ffea00; }
+  #plot-sin div:nth-child(49) {
+    width: 470.62589px;
+    background-color: #ffef00; }
+  #plot-sin div:nth-child(50) {
+    width: 479.42554px;
+    background-color: #fff400; }
+  #plot-sin div:nth-child(51) {
+    width: 488.17725px;
+    background-color: #fff900; }
+  #plot-sin div:nth-child(52) {
+    width: 496.88014px;
+    background-color: #fffd00; }
+  #plot-sin div:nth-child(53) {
+    width: 505.53334px;
+    background-color: #fcff00; }
+  #plot-sin div:nth-child(54) {
+    width: 514.13599px;
+    background-color: #f7ff00; }
+  #plot-sin div:nth-child(55) {
+    width: 522.68723px;
+    background-color: #f2ff00; }
+  #plot-sin div:nth-child(56) {
+    width: 531.1862px;
+    background-color: #edff00; }
+  #plot-sin div:nth-child(57) {
+    width: 539.63205px;
+    background-color: #e8ff00; }
+  #plot-sin div:nth-child(58) {
+    width: 548.02394px;
+    background-color: #e3ff00; }
+  #plot-sin div:nth-child(59) {
+    width: 556.36102px;
+    background-color: #dfff00; }
+  #plot-sin div:nth-child(60) {
+    width: 564.64247px;
+    background-color: #daff00; }
+  #plot-sin div:nth-child(61) {
+    width: 572.86746px;
+    background-color: #d5ff00; }
+  #plot-sin div:nth-child(62) {
+    width: 581.03516px;
+    background-color: #d0ff00; }
+  #plot-sin div:nth-child(63) {
+    width: 589.14476px;
+    background-color: #cbff00; }
+  #plot-sin div:nth-child(64) {
+    width: 597.19544px;
+    background-color: #c6ff00; }
+  #plot-sin div:nth-child(65) {
+    width: 605.18641px;
+    background-color: #c1ff00; }
+  #plot-sin div:nth-child(66) {
+    width: 613.11685px;
+    background-color: #bcff00; }
+  #plot-sin div:nth-child(67) {
+    width: 620.98599px;
+    background-color: #b8ff00; }
+  #plot-sin div:nth-child(68) {
+    width: 628.79302px;
+    background-color: #b3ff00; }
+  #plot-sin div:nth-child(69) {
+    width: 636.53718px;
+    background-color: #aeff00; }
+  #plot-sin div:nth-child(70) {
+    width: 644.21769px;
+    background-color: #a9ff00; }
+  #plot-sin div:nth-child(71) {
+    width: 651.83377px;
+    background-color: #a4ff00; }
+  #plot-sin div:nth-child(72) {
+    width: 659.38467px;
+    background-color: #9fff00; }
+  #plot-sin div:nth-child(73) {
+    width: 666.86964px;
+    background-color: #9aff00; }
+  #plot-sin div:nth-child(74) {
+    width: 674.28791px;
+    background-color: #95ff00; }
+  #plot-sin div:nth-child(75) {
+    width: 681.63876px;
+    background-color: #91ff00; }
+  #plot-sin div:nth-child(76) {
+    width: 688.92145px;
+    background-color: #8cff00; }
+  #plot-sin div:nth-child(77) {
+    width: 696.13524px;
+    background-color: #87ff00; }
+  #plot-sin div:nth-child(78) {
+    width: 703.27942px;
+    background-color: #82ff00; }
+  #plot-sin div:nth-child(79) {
+    width: 710.35327px;
+    background-color: #7dff00; }
+  #plot-sin div:nth-child(80) {
+    width: 717.35609px;
+    background-color: #78ff00; }
+  #plot-sin div:nth-child(81) {
+    width: 724.28717px;
+    background-color: #73ff00; }
+  #plot-sin div:nth-child(82) {
+    width: 731.14583px;
+    background-color: #6eff00; }
+  #plot-sin div:nth-child(83) {
+    width: 737.93137px;
+    background-color: #6aff00; }
+  #plot-sin div:nth-child(84) {
+    width: 744.64312px;
+    background-color: #65ff00; }
+  #plot-sin div:nth-child(85) {
+    width: 751.28041px;
+    background-color: #60ff00; }
+  #plot-sin div:nth-child(86) {
+    width: 757.84256px;
+    background-color: #5bff00; }
+  #plot-sin div:nth-child(87) {
+    width: 764.32894px;
+    background-color: #56ff00; }
+  #plot-sin div:nth-child(88) {
+    width: 770.73888px;
+    background-color: #51ff00; }
+  #plot-sin div:nth-child(89) {
+    width: 777.07175px;
+    background-color: #4cff00; }
+  #plot-sin div:nth-child(90) {
+    width: 783.32691px;
+    background-color: #47ff00; }
+  #plot-sin div:nth-child(91) {
+    width: 789.50374px;
+    background-color: #43ff00; }
+  #plot-sin div:nth-child(92) {
+    width: 795.60162px;
+    background-color: #3eff00; }
+  #plot-sin div:nth-child(93) {
+    width: 801.61994px;
+    background-color: #39ff00; }
+  #plot-sin div:nth-child(94) {
+    width: 807.5581px;
+    background-color: #34ff00; }
+  #plot-sin div:nth-child(95) {
+    width: 813.4155px;
+    background-color: #2fff00; }
+  #plot-sin div:nth-child(96) {
+    width: 819.19157px;
+    background-color: #2aff00; }
+  #plot-sin div:nth-child(97) {
+    width: 824.88571px;
+    background-color: #25ff00; }
+  #plot-sin div:nth-child(98) {
+    width: 830.49737px;
+    background-color: #20ff00; }
+  #plot-sin div:nth-child(99) {
+    width: 836.02598px;
+    background-color: #1cff00; }
+  #plot-sin div:nth-child(100) {
+    width: 841.47098px;
+    background-color: #17ff00; }
+  #plot-sin div:nth-child(101) {
+    width: 846.83184px;
+    background-color: #12ff00; }
+  #plot-sin div:nth-child(102) {
+    width: 852.10802px;
+    background-color: #0dff00; }
+  #plot-sin div:nth-child(103) {
+    width: 857.29899px;
+    background-color: #08ff00; }
+  #plot-sin div:nth-child(104) {
+    width: 862.40423px;
+    background-color: #03ff00; }
+  #plot-sin div:nth-child(105) {
+    width: 867.42323px;
+    background-color: #00ff02; }
+  #plot-sin div:nth-child(106) {
+    width: 872.35548px;
+    background-color: #00ff06; }
+  #plot-sin div:nth-child(107) {
+    width: 877.2005px;
+    background-color: #00ff0b; }
+  #plot-sin div:nth-child(108) {
+    width: 881.95781px;
+    background-color: #00ff10; }
+  #plot-sin div:nth-child(109) {
+    width: 886.62691px;
+    background-color: #00ff15; }
+  #plot-sin div:nth-child(110) {
+    width: 891.20736px;
+    background-color: #00ff1a; }
+  #plot-sin div:nth-child(111) {
+    width: 895.69869px;
+    background-color: #00ff1f; }
+  #plot-sin div:nth-child(112) {
+    width: 900.10044px;
+    background-color: #00ff24; }
+  #plot-sin div:nth-child(113) {
+    width: 904.41219px;
+    background-color: #00ff29; }
+  #plot-sin div:nth-child(114) {
+    width: 908.6335px;
+    background-color: #00ff2d; }
+  #plot-sin div:nth-child(115) {
+    width: 912.76394px;
+    background-color: #00ff32; }
+  #plot-sin div:nth-child(116) {
+    width: 916.80311px;
+    background-color: #00ff37; }
+  #plot-sin div:nth-child(117) {
+    width: 920.7506px;
+    background-color: #00ff3c; }
+  #plot-sin div:nth-child(118) {
+    width: 924.60601px;
+    background-color: #00ff41; }
+  #plot-sin div:nth-child(119) {
+    width: 928.36897px;
+    background-color: #00ff46; }
+  #plot-sin div:nth-child(120) {
+    width: 932.03909px;
+    background-color: #00ff4b; }
+  #plot-sin div:nth-child(121) {
+    width: 935.616px;
+    background-color: #00ff50; }
+  #plot-sin div:nth-child(122) {
+    width: 939.09936px;
+    background-color: #00ff54; }
+  #plot-sin div:nth-child(123) {
+    width: 942.4888px;
+    background-color: #00ff59; }
+  #plot-sin div:nth-child(124) {
+    width: 945.784px;
+    background-color: #00ff5e; }
+  #plot-sin div:nth-child(125) {
+    width: 948.98462px;
+    background-color: #00ff63; }
+  #plot-sin div:nth-child(126) {
+    width: 952.09034px;
+    background-color: #00ff68; }
+  #plot-sin div:nth-child(127) {
+    width: 955.10086px;
+    background-color: #00ff6d; }
+  #plot-sin div:nth-child(128) {
+    width: 958.01586px;
+    background-color: #00ff72; }
+  #plot-sin div:nth-child(129) {
+    width: 960.83506px;
+    background-color: #00ff77; }
+  #plot-sin div:nth-child(130) {
+    width: 963.55819px;
+    background-color: #00ff7b; }
+  #plot-sin div:nth-child(131) {
+    width: 966.18495px;
+    background-color: #00ff80; }
+  #plot-sin div:nth-child(132) {
+    width: 968.7151px;
+    background-color: #00ff85; }
+  #plot-sin div:nth-child(133) {
+    width: 971.14838px;
+    background-color: #00ff8a; }
+  #plot-sin div:nth-child(134) {
+    width: 973.48454px;
+    background-color: #00ff8f; }
+  #plot-sin div:nth-child(135) {
+    width: 975.72336px;
+    background-color: #00ff94; }
+  #plot-sin div:nth-child(136) {
+    width: 977.8646px;
+    background-color: #00ff99; }
+  #plot-sin div:nth-child(137) {
+    width: 979.90806px;
+    background-color: #00ff9e; }
+  #plot-sin div:nth-child(138) {
+    width: 981.85353px;
+    background-color: #00ffa2; }
+  #plot-sin div:nth-child(139) {
+    width: 983.70081px;
+    background-color: #00ffa7; }
+  #plot-sin div:nth-child(140) {
+    width: 985.44973px;
+    background-color: #00ffac; }
+  #plot-sin div:nth-child(141) {
+    width: 987.1001px;
+    background-color: #00ffb1; }
+  #plot-sin div:nth-child(142) {
+    width: 988.65176px;
+    background-color: #00ffb6; }
+  #plot-sin div:nth-child(143) {
+    width: 990.10456px;
+    background-color: #00ffbb; }
+  #plot-sin div:nth-child(144) {
+    width: 991.45835px;
+    background-color: #00ffc0; }
+  #plot-sin div:nth-child(145) {
+    width: 992.71299px;
+    background-color: #00ffc5; }
+  #plot-sin div:nth-child(146) {
+    width: 993.86836px;
+    background-color: #00ffc9; }
+  #plot-sin div:nth-child(147) {
+    width: 994.92435px;
+    background-color: #00ffce; }
+  #plot-sin div:nth-child(148) {
+    width: 995.88084px;
+    background-color: #00ffd3; }
+  #plot-sin div:nth-child(149) {
+    width: 996.73775px;
+    background-color: #00ffd8; }
+  #plot-sin div:nth-child(150) {
+    width: 997.49499px;
+    background-color: #00ffdd; }
+  #plot-sin div:nth-child(151) {
+    width: 998.15247px;
+    background-color: #00ffe2; }
+  #plot-sin div:nth-child(152) {
+    width: 998.71014px;
+    background-color: #00ffe7; }
+  #plot-sin div:nth-child(153) {
+    width: 999.16795px;
+    background-color: #00ffec; }
+  #plot-sin div:nth-child(154) {
+    width: 999.52583px;
+    background-color: #00fff0; }
+  #plot-sin div:nth-child(155) {
+    width: 999.78376px;
+    background-color: #00fff5; }
+  #plot-sin div:nth-child(156) {
+    width: 999.94172px;
+    background-color: #00fffa; }
+  #plot-sin div:nth-child(157) {
+    width: 999.99968px;
+    background-color: cyan; }
+  #plot-sin div:nth-child(158) {
+    width: 999.95765px;
+    background-color: #00faff; }
+  #plot-sin div:nth-child(159) {
+    width: 999.81562px;
+    background-color: #00f5ff; }
+  #plot-sin div:nth-child(160) {
+    width: 999.5736px;
+    background-color: #00f0ff; }
+  #plot-sin div:nth-child(161) {
+    width: 999.23163px;
+    background-color: #00ecff; }
+  #plot-sin div:nth-child(162) {
+    width: 998.78974px;
+    background-color: #00e7ff; }
+  #plot-sin div:nth-child(163) {
+    width: 998.24797px;
+    background-color: #00e2ff; }
+  #plot-sin div:nth-child(164) {
+    width: 997.60638px;
+    background-color: #00ddff; }
+  #plot-sin div:nth-child(165) {
+    width: 996.86503px;
+    background-color: #00d8ff; }
+  #plot-sin div:nth-child(166) {
+    width: 996.02399px;
+    background-color: #00d3ff; }
+  #plot-sin div:nth-child(167) {
+    width: 995.08335px;
+    background-color: #00ceff; }
+  #plot-sin div:nth-child(168) {
+    width: 994.0432px;
+    background-color: #00c9ff; }
+  #plot-sin div:nth-child(169) {
+    width: 992.90365px;
+    background-color: #00c5ff; }
+  #plot-sin div:nth-child(170) {
+    width: 991.66481px;
+    background-color: #00c0ff; }
+  #plot-sin div:nth-child(171) {
+    width: 990.3268px;
+    background-color: #00bbff; }
+  #plot-sin div:nth-child(172) {
+    width: 988.88977px;
+    background-color: #00b6ff; }
+  #plot-sin div:nth-child(173) {
+    width: 987.35384px;
+    background-color: #00b1ff; }
+  #plot-sin div:nth-child(174) {
+    width: 985.71918px;
+    background-color: #00acff; }
+  #plot-sin div:nth-child(175) {
+    width: 983.98595px;
+    background-color: #00a7ff; }
+  #plot-sin div:nth-child(176) {
+    width: 982.15432px;
+    background-color: #00a2ff; }
+  #plot-sin div:nth-child(177) {
+    width: 980.22447px;
+    background-color: #009eff; }
+  #plot-sin div:nth-child(178) {
+    width: 978.19661px;
+    background-color: #0099ff; }
+  #plot-sin div:nth-child(179) {
+    width: 976.07092px;
+    background-color: #0094ff; }
+  #plot-sin div:nth-child(180) {
+    width: 973.84763px;
+    background-color: #008fff; }
+  #plot-sin div:nth-child(181) {
+    width: 971.52696px;
+    background-color: #008aff; }
+  #plot-sin div:nth-child(182) {
+    width: 969.10913px;
+    background-color: #0085ff; }
+  #plot-sin div:nth-child(183) {
+    width: 966.59439px;
+    background-color: #0080ff; }
+  #plot-sin div:nth-child(184) {
+    width: 963.983px;
+    background-color: #007bff; }
+  #plot-sin div:nth-child(185) {
+    width: 961.2752px;
+    background-color: #0077ff; }
+  #plot-sin div:nth-child(186) {
+    width: 958.47128px;
+    background-color: #0072ff; }
+  #plot-sin div:nth-child(187) {
+    width: 955.57152px;
+    background-color: #006dff; }
+  #plot-sin div:nth-child(188) {
+    width: 952.57619px;
+    background-color: #0068ff; }
+  #plot-sin div:nth-child(189) {
+    width: 949.48561px;
+    background-color: #0063ff; }
+  #plot-sin div:nth-child(190) {
+    width: 946.30009px;
+    background-color: #005eff; }
+  #plot-sin div:nth-child(191) {
+    width: 943.01993px;
+    background-color: #0059ff; }
+  #plot-sin div:nth-child(192) {
+    width: 939.64547px;
+    background-color: #0054ff; }
+  #plot-sin div:nth-child(193) {
+    width: 936.17705px;
+    background-color: #0050ff; }
+  #plot-sin div:nth-child(194) {
+    width: 932.61501px;
+    background-color: #004bff; }
+  #plot-sin div:nth-child(195) {
+    width: 928.95972px;
+    background-color: #0046ff; }
+  #plot-sin div:nth-child(196) {
+    width: 925.21152px;
+    background-color: #0041ff; }
+  #plot-sin div:nth-child(197) {
+    width: 921.37081px;
+    background-color: #003cff; }
+  #plot-sin div:nth-child(198) {
+    width: 917.43796px;
+    background-color: #0037ff; }
+  #plot-sin div:nth-child(199) {
+    width: 913.41336px;
+    background-color: #0032ff; }
+  #plot-sin div:nth-child(200) {
+    width: 909.29743px;
+    background-color: #002dff; }
+  #plot-sin div:nth-child(201) {
+    width: 905.09056px;
+    background-color: #0029ff; }
+  #plot-sin div:nth-child(202) {
+    width: 900.79319px;
+    background-color: #0024ff; }
+  #plot-sin div:nth-child(203) {
+    width: 896.40574px;
+    background-color: #001fff; }
+  #plot-sin div:nth-child(204) {
+    width: 891.92865px;
+    background-color: #001aff; }
+  #plot-sin div:nth-child(205) {
+    width: 887.36237px;
+    background-color: #0015ff; }
+  #plot-sin div:nth-child(206) {
+    width: 882.70735px;
+    background-color: #0010ff; }
+  #plot-sin div:nth-child(207) {
+    width: 877.96406px;
+    background-color: #000bff; }
+  #plot-sin div:nth-child(208) {
+    width: 873.13298px;
+    background-color: #0006ff; }
+  #plot-sin div:nth-child(209) {
+    width: 868.21458px;
+    background-color: #0002ff; }
+  #plot-sin div:nth-child(210) {
+    width: 863.20937px;
+    background-color: #0300ff; }
+  #plot-sin div:nth-child(211) {
+    width: 858.11783px;
+    background-color: #0800ff; }
+  #plot-sin div:nth-child(212) {
+    width: 852.94048px;
+    background-color: #0d00ff; }
+  #plot-sin div:nth-child(213) {
+    width: 847.67784px;
+    background-color: #1200ff; }
+  #plot-sin div:nth-child(214) {
+    width: 842.33043px;
+    background-color: #1700ff; }
+  #plot-sin div:nth-child(215) {
+    width: 836.89879px;
+    background-color: #1c00ff; }
+  #plot-sin div:nth-child(216) {
+    width: 831.38346px;
+    background-color: #2000ff; }
+  #plot-sin div:nth-child(217) {
+    width: 825.78499px;
+    background-color: #2500ff; }
+  #plot-sin div:nth-child(218) {
+    width: 820.10395px;
+    background-color: #2a00ff; }
+  #plot-sin div:nth-child(219) {
+    width: 814.34089px;
+    background-color: #2f00ff; }
+  #plot-sin div:nth-child(220) {
+    width: 808.4964px;
+    background-color: #3400ff; }
+  #plot-sin div:nth-child(221) {
+    width: 802.57107px;
+    background-color: #3900ff; }
+  #plot-sin div:nth-child(222) {
+    width: 796.56547px;
+    background-color: #3e00ff; }
+  #plot-sin div:nth-child(223) {
+    width: 790.48022px;
+    background-color: #4300ff; }
+  #plot-sin div:nth-child(224) {
+    width: 784.31593px;
+    background-color: #4700ff; }
+  #plot-sin div:nth-child(225) {
+    width: 778.0732px;
+    background-color: #4c00ff; }
+  #plot-sin div:nth-child(226) {
+    width: 771.75266px;
+    background-color: #5100ff; }
+  #plot-sin div:nth-child(227) {
+    width: 765.35495px;
+    background-color: #5600ff; }
+  #plot-sin div:nth-child(228) {
+    width: 758.88071px;
+    background-color: #5b00ff; }
+  #plot-sin div:nth-child(229) {
+    width: 752.33058px;
+    background-color: #6000ff; }
+  #plot-sin div:nth-child(230) {
+    width: 745.70521px;
+    background-color: #6500ff; }
+  #plot-sin div:nth-child(231) {
+    width: 739.00528px;
+    background-color: #6a00ff; }
+  #plot-sin div:nth-child(232) {
+    width: 732.23144px;
+    background-color: #6e00ff; }
+  #plot-sin div:nth-child(233) {
+    width: 725.38439px;
+    background-color: #7300ff; }
+  #plot-sin div:nth-child(234) {
+    width: 718.46479px;
+    background-color: #7800ff; }
+  #plot-sin div:nth-child(235) {
+    width: 711.47335px;
+    background-color: #7d00ff; }
+  #plot-sin div:nth-child(236) {
+    width: 704.41077px;
+    background-color: #8200ff; }
+  #plot-sin div:nth-child(237) {
+    width: 697.27774px;
+    background-color: #8700ff; }
+  #plot-sin div:nth-child(238) {
+    width: 690.07498px;
+    background-color: #8c00ff; }
+  #plot-sin div:nth-child(239) {
+    width: 682.80322px;
+    background-color: #9100ff; }
+  #plot-sin div:nth-child(240) {
+    width: 675.46318px;
+    background-color: #9500ff; }
+  #plot-sin div:nth-child(241) {
+    width: 668.05559px;
+    background-color: #9a00ff; }
+  #plot-sin div:nth-child(242) {
+    width: 660.5812px;
+    background-color: #9f00ff; }
+  #plot-sin div:nth-child(243) {
+    width: 653.04075px;
+    background-color: #a400ff; }
+  #plot-sin div:nth-child(244) {
+    width: 645.435px;
+    background-color: #a900ff; }
+  #plot-sin div:nth-child(245) {
+    width: 637.7647px;
+    background-color: #ae00ff; }
+  #plot-sin div:nth-child(246) {
+    width: 630.03063px;
+    background-color: #b300ff; }
+  #plot-sin div:nth-child(247) {
+    width: 622.23356px;
+    background-color: #b800ff; }
+  #plot-sin div:nth-child(248) {
+    width: 614.37426px;
+    background-color: #bc00ff; }
+  #plot-sin div:nth-child(249) {
+    width: 606.45352px;
+    background-color: #c100ff; }
+  #plot-sin div:nth-child(250) {
+    width: 598.47214px;
+    background-color: #c600ff; }
+  #plot-sin div:nth-child(251) {
+    width: 590.43092px;
+    background-color: #cb00ff; }
+  #plot-sin div:nth-child(252) {
+    width: 582.33065px;
+    background-color: #d000ff; }
+  #plot-sin div:nth-child(253) {
+    width: 574.17215px;
+    background-color: #d500ff; }
+  #plot-sin div:nth-child(254) {
+    width: 565.95623px;
+    background-color: #da00ff; }
+  #plot-sin div:nth-child(255) {
+    width: 557.68372px;
+    background-color: #df00ff; }
+  #plot-sin div:nth-child(256) {
+    width: 549.35544px;
+    background-color: #e300ff; }
+  #plot-sin div:nth-child(257) {
+    width: 540.97222px;
+    background-color: #e800ff; }
+  #plot-sin div:nth-child(258) {
+    width: 532.53491px;
+    background-color: #ed00ff; }
+  #plot-sin div:nth-child(259) {
+    width: 524.04434px;
+    background-color: #f200ff; }
+  #plot-sin div:nth-child(260) {
+    width: 515.50137px;
+    background-color: #f700ff; }
+  #plot-sin div:nth-child(261) {
+    width: 506.90685px;
+    background-color: #fc00ff; }
+  #plot-sin div:nth-child(262) {
+    width: 498.26164px;
+    background-color: #ff00fd; }
+  #plot-sin div:nth-child(263) {
+    width: 489.56661px;
+    background-color: #ff00f9; }
+  #plot-sin div:nth-child(264) {
+    width: 480.82261px;
+    background-color: #ff00f4; }
+  #plot-sin div:nth-child(265) {
+    width: 472.03054px;
+    background-color: #ff00ef; }
+  #plot-sin div:nth-child(266) {
+    width: 463.19126px;
+    background-color: #ff00ea; }
+  #plot-sin div:nth-child(267) {
+    width: 454.30567px;
+    background-color: #ff00e5; }
+  #plot-sin div:nth-child(268) {
+    width: 445.37464px;
+    background-color: #ff00e0; }
+  #plot-sin div:nth-child(269) {
+    width: 436.39908px;
+    background-color: #ff00db; }
+  #plot-sin div:nth-child(270) {
+    width: 427.37988px;
+    background-color: #ff00d6; }
+  #plot-sin div:nth-child(271) {
+    width: 418.31794px;
+    background-color: #ff00d2; }
+  #plot-sin div:nth-child(272) {
+    width: 409.21417px;
+    background-color: #ff00cd; }
+  #plot-sin div:nth-child(273) {
+    width: 400.06948px;
+    background-color: #ff00c8; }
+  #plot-sin div:nth-child(274) {
+    width: 390.88478px;
+    background-color: #ff00c3; }
+  #plot-sin div:nth-child(275) {
+    width: 381.66099px;
+    background-color: #ff00be; }
+  #plot-sin div:nth-child(276) {
+    width: 372.39904px;
+    background-color: #ff00b9; }
+  #plot-sin div:nth-child(277) {
+    width: 363.09985px;
+    background-color: #ff00b4; }
+  #plot-sin div:nth-child(278) {
+    width: 353.76435px;
+    background-color: #ff00af; }
+  #plot-sin div:nth-child(279) {
+    width: 344.39347px;
+    background-color: #ff00ab; }
+  #plot-sin div:nth-child(280) {
+    width: 334.98815px;
+    background-color: #ff00a6; }
+  #plot-sin div:nth-child(281) {
+    width: 325.54933px;
+    background-color: #ff00a1; }
+  #plot-sin div:nth-child(282) {
+    width: 316.07796px;
+    background-color: #ff009c; }
+  #plot-sin div:nth-child(283) {
+    width: 306.57499px;
+    background-color: #ff0097; }
+  #plot-sin div:nth-child(284) {
+    width: 297.04135px;
+    background-color: #ff0092; }
+  #plot-sin div:nth-child(285) {
+    width: 287.47801px;
+    background-color: #ff008d; }
+  #plot-sin div:nth-child(286) {
+    width: 277.88593px;
+    background-color: #ff0088; }
+  #plot-sin div:nth-child(287) {
+    width: 268.26605px;
+    background-color: #ff0084; }
+  #plot-sin div:nth-child(288) {
+    width: 258.61935px;
+    background-color: #ff007f; }
+  #plot-sin div:nth-child(289) {
+    width: 248.94679px;
+    background-color: #ff007a; }
+  #plot-sin div:nth-child(290) {
+    width: 239.24933px;
+    background-color: #ff0075; }
+  #plot-sin div:nth-child(291) {
+    width: 229.52795px;
+    background-color: #ff0070; }
+  #plot-sin div:nth-child(292) {
+    width: 219.78361px;
+    background-color: #ff006b; }
+  #plot-sin div:nth-child(293) {
+    width: 210.0173px;
+    background-color: #ff0066; }
+  #plot-sin div:nth-child(294) {
+    width: 200.22998px;
+    background-color: #ff0061; }
+  #plot-sin div:nth-child(295) {
+    width: 190.42265px;
+    background-color: #ff005d; }
+  #plot-sin div:nth-child(296) {
+    width: 180.59627px;
+    background-color: #ff0058; }
+  #plot-sin div:nth-child(297) {
+    width: 170.75183px;
+    background-color: #ff0053; }
+  #plot-sin div:nth-child(298) {
+    width: 160.89031px;
+    background-color: #ff004e; }
+  #plot-sin div:nth-child(299) {
+    width: 151.01271px;
+    background-color: #ff0049; }
+  #plot-sin div:nth-child(300) {
+    width: 141.12001px;
+    background-color: #ff0044; }
+  #plot-sin div:nth-child(301) {
+    width: 131.21319px;
+    background-color: #ff003f; }
+  #plot-sin div:nth-child(302) {
+    width: 121.29326px;
+    background-color: #ff003a; }
+  #plot-sin div:nth-child(303) {
+    width: 111.36119px;
+    background-color: #ff0036; }
+  #plot-sin div:nth-child(304) {
+    width: 101.41799px;
+    background-color: #ff0031; }
+  #plot-sin div:nth-child(305) {
+    width: 91.46464px;
+    background-color: #ff002c; }
+  #plot-sin div:nth-child(306) {
+    width: 81.50215px;
+    background-color: #ff0027; }
+  #plot-sin div:nth-child(307) {
+    width: 71.53151px;
+    background-color: #ff0022; }
+  #plot-sin div:nth-child(308) {
+    width: 61.55372px;
+    background-color: #ff001d; }
+  #plot-sin div:nth-child(309) {
+    width: 51.56977px;
+    background-color: #ff0018; }
+  #plot-sin div:nth-child(310) {
+    width: 41.58066px;
+    background-color: #ff0013; }
+  #plot-sin div:nth-child(311) {
+    width: 31.5874px;
+    background-color: #ff000f; }
+  #plot-sin div:nth-child(312) {
+    width: 21.59098px;
+    background-color: #ff000a; }
+  #plot-sin div:nth-child(313) {
+    width: 11.59239px;
+    background-color: #ff0005; }
+  #plot-sin div:nth-child(314) {
+    width: 1.59265px;
+    background-color: red; }
+
+#description {
+  position: fixed;
+  top: 0;
+  left: 70%;
+  width: 30%;
+  min-width: 600px;
+  overflow: hidden;
+  border-style: dashed;
+  border-width: 0 0 1px 1px;
+  border-color: black;
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 1rem; }
+  #description h1 {
+    font-family: "Comfortaa";
+    font-size: 3rem; }
+
+/*
+vim: sw=2 wrap tw=80
+*/

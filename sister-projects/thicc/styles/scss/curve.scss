@@ -1,0 +1,96 @@
+/* CSS for curve.html */
+
+/* Fonts
+ * Comfortaa (Johan Aakerlund)
+ */
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+/// Math toolbox
+
+// This definition of the 3rd hyperoperation, albeit nonvigourous, is
+// surprisingly apt for this purpose.
+//
+@function pow($base, $exponent) {
+  $value: 1;
+
+  @if $exponent > 0 {
+    @for $i from 1 through $exponent {
+      $value: $value * $base;
+    }
+  }
+
+  @return $value;
+}
+
+@function factorial($n) {
+  $value: 1;
+
+  @for $i from 2 through $n {
+    $value: $value * $i;
+  }
+
+  @return $value;
+}
+
+@function sin($x, $serieslimit: 128) {
+  $value: $x;
+
+  @for $i from 1 through $serieslimit {
+    $value: $value + pow(-1, $i) * pow($x, 2 * $i + 1) / factorial(2 * $i + 1);
+  }
+
+  @return $value;
+}
+
+/// Actual CSS work
+
+#plot-sin {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  max-width: 100%;
+  overflow: hidden;
+
+  // non-redundant `height` declaration. Thanks to u/Thykka for pointing out.
+  div {
+    height: 3px;
+  }
+
+  @for $i from 1 through 314 {
+    div:nth-child(#{$i}) {
+      width: sin($i / 100) * 1000 + 0px;
+      background-color: adjust-hue(red, 360/314 * $i);
+    }
+  }
+}
+
+#description {
+  position: fixed;
+  top: 0;
+  left: 70%;
+
+  width: 30%;
+  min-width: 600px;
+  overflow: hidden;
+
+  border-style: dashed;
+  border-width: 0 0 1px 1px;
+  border-color: black;
+
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.7);
+
+  padding: 1rem;
+
+  h1 {
+    font: {
+      family: "Comfortaa";
+      size: 3rem;
+    }
+  }
+}
+
+/*
+vim: sw=2 wrap tw=80
+*/
