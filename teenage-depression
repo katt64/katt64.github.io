@@ -1,0 +1,164 @@
+diff -r -u lbjork64.github.io/.git/config katt64.github.io/.git/config
+--- lbjork64.github.io/.git/config	2017-10-13 02:05:15.055132700 +0700
++++ katt64.github.io/.git/config	2017-10-13 02:03:55.828585773 +0700
+@@ -4,7 +4,7 @@
+ 	bare = false
+ 	logallrefupdates = true
+ [remote "origin"]
+-	url = git@github.com:katt64/lbjork64.github.io.git
++	url = git@github.com:katt64/katt64.github.io.git
+ 	fetch = +refs/heads/*:refs/remotes/origin/*
+ [branch "master"]
+ 	remote = origin
+Only in lbjork64.github.io/.git: index
+Only in lbjork64.github.io/.git: logs
+Only in lbjork64.github.io/.git/objects/pack: pack-3edbef726c1c6cc9de03d120d8bca458a2c8cb50.idx
+Only in lbjork64.github.io/.git/objects/pack: pack-3edbef726c1c6cc9de03d120d8bca458a2c8cb50.pack
+Only in lbjork64.github.io/.git: packed-refs
+Only in lbjork64.github.io/.git/refs/heads: master
+Only in lbjork64.github.io/.git/refs: remotes
+diff -r -u lbjork64.github.io/README.md katt64.github.io/README.md
+--- lbjork64.github.io/README.md	2017-10-13 02:05:15.055132700 +0700
++++ katt64.github.io/README.md	2017-10-13 02:07:45.732175833 +0700
+@@ -1,4 +1,4 @@
+-# lbjork64.github.io
++# katt64.github.io
+ 
+ This is my personal website hosted on Github pages. It's just a website about me
+ and the stuff I have done. Here, you will find quintessential, and perhaps
+@@ -7,10 +7,10 @@
+ large to chuck out.
+ 
+ So, feel free to browse around this repository or [the
+-website](https://lbjork64.github.io/) itself.
++website](https://katt64.github.io/) itself.
+ 
+ All content in this repository is *generally* licensed under [CC BY-SA
+ 4.0][bysa] unless explicitly specified otherwise.
+ 
+-[systerproj]: https://github.com/lbjork64/lbjork64.github.io/tree/master/sister-projects
++[systerproj]: https://github.com/katt64/katt64.github.io/tree/master/sister-projects
+ [bysa]: https://creativecommons.org/licenses/by-sa/4.0/
+diff -r -u lbjork64.github.io/sister-projects/musings-at-3am/index.html katt64.github.io/sister-projects/musings-at-3am/index.html
+--- lbjork64.github.io/sister-projects/musings-at-3am/index.html	2017-10-13 02:05:15.055132700 +0700
++++ katt64.github.io/sister-projects/musings-at-3am/index.html	2017-10-13 02:11:27.685719254 +0700
+@@ -3,7 +3,7 @@
+     index.html  Home page
+ 
+     Started first line on Aug 27, 2017
+-    Linus Björk <linus.bjork64@gmail.com>
++    Stephanie Björk
+ -->
+ <html lang="sv">
+   <head>
+@@ -93,10 +93,9 @@
+             <p>So, what are you waiting for? Take a look at the source code and
+             inspect the elements (<kbd>F12</kbd> on most browsers)! 😝</p>
+ 
+-            <p id="linus">I'm Linus Björk. You can contact me via email at <a
+-            href="mailto:linus.bjork64@gmail.com">linus.bjork64@gmail.com</a>.
+-            I'm still working on my personal website and improving it each step
+-            of the way. I appreciate kudos and compliments sent to my inbox.</p>
++            <p id="stephanie">I'm Stephanie Björk.  I'm still working on my
++            personal website and improving it each step of the way. I appreciate
++            kudos and compliments sent to my inbox.</p>
+ 
+             <!-- H1: Den lilla geten som kunne räkna till tio -->
+             <h1>Den lilla geten som kunne räkna till tio 🐐</h1>
+@@ -131,7 +130,7 @@
+ 
+         <div id="footing">
+           <div id="copytxt-container">
+-            Copyright &copy; 2017 <a href="#linus">Linus Björk</a>
++            Copyright &copy; 2017 <a href="#stephanie">Stephanie Björk</a>
+           </div>
+ 
+           <div id="license-container">
+diff -r -u lbjork64.github.io/sister-projects/musings-at-3am/styles/main.css katt64.github.io/sister-projects/musings-at-3am/styles/main.css
+--- lbjork64.github.io/sister-projects/musings-at-3am/styles/main.css	2017-10-13 02:05:15.055132700 +0700
++++ katt64.github.io/sister-projects/musings-at-3am/styles/main.css	2017-10-13 02:11:48.740858223 +0700
+@@ -1,7 +1,7 @@
+ /* Main CSS
+  *
+  * Started first line on Aug 27, 2017 
+- * Linus Björk <linus.bjork64@gmail.com>
++ * Stephanie Björk
+  */
+ 
+ /* Fonts:
+diff -r -u lbjork64.github.io/sister-projects/thicc/curve.html katt64.github.io/sister-projects/thicc/curve.html
+--- lbjork64.github.io/sister-projects/thicc/curve.html	2017-10-13 02:05:15.113133100 +0700
++++ katt64.github.io/sister-projects/thicc/curve.html	2017-10-13 02:08:28.124470001 +0700
+@@ -332,8 +332,8 @@
+     here.</p>
+ 
+     <p>btw, im
+-      <a href="https://lbjork64.github.io" target="_blank">linus bjrok</a>. nice
+-      2 meet u. 😏</p>
++      <a href="https://katt64.github.io" target="_blank">stefanie bjrok</a>.
++      nice 2 meet u. 😏</p>
+   </div>
+   
+ </body>
+diff -r -u lbjork64.github.io/sister-projects/thicc/details.html katt64.github.io/sister-projects/thicc/details.html
+--- lbjork64.github.io/sister-projects/thicc/details.html	2017-10-13 02:05:15.114133107 +0700
++++ katt64.github.io/sister-projects/thicc/details.html	2017-10-13 02:09:52.493056323 +0700
+@@ -2,7 +2,7 @@
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8" />
+-  <title>Mathematical Musings behind Thicc Curve (Linus Björk; Sep 2, 2017)
++  <title>Mathematical Musings behind Thicc Curve (Stephanie Björk; Sep 2, 2017)
+   </title>
+   <link rel="stylesheet" href="styles/main.css" type="text/css" />
+   <link rel="stylesheet" href="styles/details.css" type="text/css" />
+@@ -13,7 +13,7 @@
+       <div id="heading">
+         <h1>Mathematical Musings behind Thicc Curve</h1>
+         <div id="author-date">
+-          <h2>Linus Björk</h2>
++          <h2>Stephanie Björk</h2>
+           <h2>Sep 2, 2017</h2>
+           <!-- Finished writing: Sep 6, 2017 -->
+         </div>
+@@ -1097,7 +1097,7 @@
+       in this section has a potential to be an invaluable resource for those who
+       are currently studying mathematics at this level, this section and the
+       mathematical primers can be accessed directly by <a
+-      href="https://lbjork64.github.io/thicc/details.html#primer">this permanent
++      href="https://katt64.github.io/thicc/details.html#primer">this permanent
+       link</a> and shared freely to whoever needs it under the <a
+       href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC
+       BY-SA 4.0</a> license.</p>
+@@ -1286,7 +1286,7 @@
+       implement an algorithm for them based upon the previous algorithms we have
+       defined for exponentiation and factorials and using the template from the
+       <code>sin</code> function. If you want, you can try implementing them and
+-      <a href="https://lbjork64.github.io" target="_blank">reach out
++      <a href="https://katt64.github.io" target="_blank">reach out
+         to me</a> with your <em>successful</em> attempts. Think of this as
+       homework if you wish. :p</p>
+ 
+@@ -1426,7 +1426,7 @@
+ 
+     <div id="back-matter">
+       <div id="copyright">Copyright &copy; 2017 <a
+-           href="https://lbjork64.github.io" target="_blank">Linus Björk</a>
++           href="https://katt64.github.io" target="_blank">Stephanie Björk</a>
+         <br>Licensed under the <a
+         href="https://creativecommons.org/licenses/by-sa/4.0/"
+         target="_blank">Creative Commons BY-SA 4.0</a> license.
+diff -r -u lbjork64.github.io/sister-projects/thicc/index.html katt64.github.io/sister-projects/thicc/index.html
+--- lbjork64.github.io/sister-projects/thicc/index.html	2017-10-13 02:05:15.120133149 +0700
++++ katt64.github.io/sister-projects/thicc/index.html	2017-10-13 02:08:52.485639182 +0700
+@@ -17,8 +17,8 @@
+     </div>
+ 
+     <div id="footer">
+-      Copyright &copy; 2017 <a href="https://lbjork64.github.io"
+-                               target="_blank">Linus Björk</a>
++      Copyright &copy; 2017 <a href="https://katt64.github.io"
++                               target="_blank">Stephanie Björk</a>
+     </div>
+   </div>
+ </body>
