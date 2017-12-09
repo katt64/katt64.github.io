@@ -1,0 +1,48 @@
+@charset "UTF-8";
+/* Fonts
+ * Playfair Display: Claus Eggers Sørensen
+ * Open Sans: Steve Matteson
+ */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display");
+#container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.6); }
+  #container #droptext {
+    position: absolute;
+    top: 30vh;
+    left: 0;
+    width: 100%;
+    font-family: "Playfair Display", serif;
+    font-size: 1.5em;
+    line-height: 2.5ex;
+    text-align: center; }
+    #container #droptext h1 {
+      margin-bottom: 1rem; }
+  #container #footnotes {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 0.8rem;
+    width: 100%;
+    padding: 1em;
+    border-top: 1px solid white; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  background-image: url("../images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom center; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+* {
+  box-sizing: border-box; }
+
+/*# sourceMappingURL=index.css.map */

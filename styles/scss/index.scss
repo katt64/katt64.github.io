@@ -1,0 +1,67 @@
+// vim: et sw=2 tw=80 wrap
+// index.scss   SCSS rules specific to index.scss
+
+@charset "utf-8";
+@import "etc/fonts";
+
+#container {
+  width: 100vw;
+  height: 100vh;
+
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.6);
+
+  #droptext {
+    position: absolute;
+    top: 30vh;
+    left: 0;
+
+    width: 100%;
+
+    font-family: $playfair;
+
+    font-size: 1.5em;
+    line-height: 2.5ex;
+    text-align: center;
+
+    h1 {
+      margin-bottom: 1rem;
+    }
+  }
+
+  #footnotes {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    font-size: 0.8rem;
+
+    width: 100%;
+    padding: 1em;
+    border-top: 1px solid white;
+  }
+}
+
+body {
+  font-family: $open-sans;
+  color: white;
+
+
+  background: {
+    image: url("../images/bg.jpg");
+    repeat: no-repeat;
+    size: cover;
+    attachment: fixed;
+    position: bottom center;
+  }
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
